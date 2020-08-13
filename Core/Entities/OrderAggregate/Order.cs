@@ -9,7 +9,8 @@ namespace Core.Entities.OrderAggregate
         {
         }
 
-        public Order(IReadOnlyList<OrderItem> orderItems, string buyerEmail,Address shipToAddress, DeliveryMethod deliveryMehod, decimal subtotal)
+        public Order(IReadOnlyList<OrderItem> orderItems, string buyerEmail,Address shipToAddress, DeliveryMethod deliveryMehod, 
+            decimal subtotal, string paymentIntentId)
         {
             BuyerEmail = buyerEmail;
             ShipToAddress = shipToAddress;
